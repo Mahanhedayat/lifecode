@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Card = ( kid,classname ) => {
+const Card = ({ children,classname }) => {
   return (
-    <div className={`bg-slate-400 text-white rounded-sm ${classname}`}>
-        {kid}
+    <div className={`bg-slate-500 text-white rounded-md m-1 ${classname}`}>
+        <div className='m-2'>
+        {children}
+        </div>
     </div>
   )
 }
